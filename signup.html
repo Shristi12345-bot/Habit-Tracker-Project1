@@ -1,1 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Tracker - Sign Up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="signup-container">
+        <div class="brand-side">
+            <div class="logo-container">
+                <div class="logo-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C6.48 2 2 6.48 2 12V18C2 19.1 2.9 20 4 20H8C9.1 20 10 19.1 10 18V14C10 12.9 9.1 12 8 12H4V12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12H16C14.9 12 14 12.9 14 14V18C14 19.1 14.9 20 16 20H20C21.1 20 22 19.1 22 18V12C22 6.48 17.52 2 12 2Z" fill="white"/>
+                    </svg>
+                </div>
+                <span class="logo-text">Habit Tracker</span>
+            </div>
+            
+            <div class="brand-content">
+                <h1>Create Account</h1>
+                <p>Start your journey to build<br>better habits.</p>
+                
+                <div class="illustration-wrapper">
+                    <svg viewBox="0 0 400 400" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="200" cy="220" r="130" fill="#EEF2FF"/>
+                        <path d="M160 300 C150 250, 155 200, 165 170 C170 155, 190 155, 195 170 C205 200, 210 250, 200 300 Z" fill="#2E2A66"/>
+                        <circle cx="182" cy="145" r="16" fill="#FBCDB6"/>
+                        <path d="M170 135 C170 130, 195 130, 195 135 C195 140, 170 142, 170 135 Z" fill="#1F1A3A"/>
+                        <path d="M150 200 L125 240 L135 245 L155 210 Z" fill="#6366F1"/>
+                        <path d="M210 200 L250 190 L253 200 L213 212 Z" fill="#FBCDB6"/>
+                        <path d="M162 170 H202 V240 H162 Z" fill="#6366F1"/>
+                        <rect x="235" y="270" width="30" height="40" rx="4" fill="#8B5CF6"/>
+                        <path d="M250 270 L230 230 M250 270 L270 240" stroke="#4C1D95" stroke-width="3"/>
+                        <circle cx="230" cy="230" r="10" fill="#A78BFA"/>
+                        <circle cx="270" cy="240" r="12" fill="#A78BFA"/>
+                        <circle cx="250" cy="210" r="8" fill="#C084FC"/>
+                        <rect x="110" y="310" width="180" height="4" fill="#6366F1" rx="2"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
 
+        
+
+        <div class="form-side">
+            <div class="form-card">
+                <h2>Sign Up</h2>
+                <form id="signupForm" autocomplete="off">
+                    <div class="input-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" placeholder="Enter your full name" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="input-group password-wrapper">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Create a password" required>
+                        <button type="button" class="toggle-password" data-target="password">
+                            <svg class="eye-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                        </button>
+                    </div>
+
+                    <div class="input-group password-wrapper">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" id="confirmPassword" placeholder="Confirm your password" required>
+                        <button type="button" class="toggle-password" data-target="confirmPassword">
+                            <svg class="eye-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                        </button>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Sign Up</button>
+                </form>
+                <div class="form-footer">
+                    Already have an account? <a href="progress.html">Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="signup.js"></script>
+</body>
+</html>

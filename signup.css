@@ -1,0 +1,205 @@
+:root {
+    --primary: #6366F1;
+    --primary-hover: #4F46E5;
+    --bg-main: #F8FAFC;
+    --text-dark: #1E293B;
+    --text-muted: #64748B;
+    --border-color: #E2E8F0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--bg-main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: var(--text-dark);
+}
+
+.signup-container {
+    display: flex;
+    width: 100%;
+    max-width: 1080px;
+    height: 840px;
+    background: #FFFFFF;
+    border-radius: 24px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.03);
+    overflow: hidden;
+    margin: 20px;
+}
+
+/* Left Panel */
+.brand-side {
+    flex: 1;
+    background: linear-gradient(145deg, #F5F3FF 0%, #EDE9FE 100%);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 70px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-icon {
+    background-color: var(--primary);
+    width: 40px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-text {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.brand-content h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #111827;
+}
+
+.brand-content p {
+    font-size: 25px;
+    color: var(--text-muted);
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.illustration-wrapper {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+/* Right Panel Form Box */
+.form-side {
+    flex: 1.1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.form-card {
+    width: 100%;
+    max-width: 420px;
+}
+
+.form-card h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.input-group label {
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.input-group input {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    font-size: 18px;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+.input-group input:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+/* Action view/hide password setup */
+.password-wrapper .toggle-password {
+    position: absolute;
+    right: 16px;
+    bottom: 14px;
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.password-wrapper .toggle-password:hover {
+    color: var(--text-dark);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 16px;
+    background: linear-gradient(135deg, #6366F1 0%, #7C3AED 100%);
+    color: #FFFFFF;
+    border: none;
+    border-radius: 12px;
+    font-size: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: opacity 0.2s;
+}
+
+.submit-btn:hover {
+    opacity: 0.95;
+}
+
+.form-footer {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 18px;
+    color: var(--text-muted);
+}
+
+.form-footer a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.form-footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 868px) {
+    .signup-container {
+        flex-direction: column;
+        height: auto;
+    }
+    .brand-side {
+        padding: 32px;
+        gap: 24px;
+    }
+    .illustration-wrapper {
+        display: none;
+    }
+}
